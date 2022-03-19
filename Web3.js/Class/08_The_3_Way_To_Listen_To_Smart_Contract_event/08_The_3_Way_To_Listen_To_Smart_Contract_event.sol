@@ -8,4 +8,9 @@ pragma solidity >=0.6.0 <0.9.0;
         -> smart contract can create event but it can't read it and modify it
         -> but outside the blockchain can read these event
         -> event is immutable
+
+    -> Reading Event wiht Web3:
+        1) Transaction receipt
+        2) getPatEvents()
+        3) Real-time events (WebSocket)
 */
