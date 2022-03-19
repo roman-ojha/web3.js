@@ -23,4 +23,6 @@ pragma solidity >=0.6.0 <0.9.0;
                         }
                     },
         -> now we will import these things in our Server/Client File
+
+        -> configure network on 'truffle-coinfig.js'
 */
