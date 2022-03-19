@@ -29,7 +29,9 @@ const init = async () => {
   });
 
   const result = await contract.methods.getData().call();
-  console.log(result);
+
+  // await contract.methods.setData().call();
+  // we can also use 'setData' function using call method if we are returning something from this function
 };
 
 init();
