@@ -24,7 +24,7 @@ const provider = new Web3.providers.HttpProvider("http://127.0.0.1:7545");
 const web3 = new Web3(provider);
 // here we are making web3 instance and we have to provide url to ethereum node
 // for ganache : http//:localhost:7545
-// in real world we will now use ganache, we might use 'metamask' for wallet in that case
+// in real world we will not use ganache, we might use 'metamask' for wallet in that case
 //
 // const web3 = new Web3(window.ethereum);
 // await window.ethereum.enable()

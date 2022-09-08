@@ -11,7 +11,7 @@ const init = async () => {
     privateKey,
     // [privateKey1, privateKey2] // if you have several addresses
     "http://127.0.0.1:7545"
-    // if this is ganache
+    // this is ganache
     // the difference with our custom provider is that now we actually sign transaction and we provide the privatekey to web3
     // so this is more realistic then using unlock ethereum address of ganache
   );
@@ -20,6 +20,7 @@ const init = async () => {
   const ganacheWeb3 = new Web3(ganacheProvider);
   const id = await ganacheWeb3.eth.net.getId();
   const deployedNetwork = MyContract.networks[id];
+  // now 'deployedNetwork.address' is the address of the deployed contract address
 
   const ganacheContract = new ganacheWeb3.eth.Contract(
     MyContract.abi,

@@ -1,0 +1,7 @@
+-> https://youtu.be/38WUVVoMZKM
+-> before you can interact to the smart contract you need to have two thing and they are:
+    1) contract address
+        -> contract address is the deployed contract in local blockchain or ethereum network
+    2) abi code
+        -> abi code is some kind of the schema of the smart contract
+        -> so we need to have to copy of abi code in our react/nodejs project

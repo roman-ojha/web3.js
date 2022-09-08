@@ -12,9 +12,11 @@ const init = async () => {
   );
 
   const addresses = await web3.eth.getAccounts();
+  // these are the account address available to the wallet network
 
   await contract.methods.sendEther().send({
     from: addresses[0],
+    // you will set metamask address if you are working on read project
     // value: 100,
     // value: <value_of_ether_that_we_want_to_send>>
     // value will be on wei so to transfer 1 ether number will be huge

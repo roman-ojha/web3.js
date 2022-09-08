@@ -12,6 +12,7 @@ const init = async () => {
   );
 
   const addresses = await web3.eth.getAccounts();
+  // these are the account address available to the wallet network
   // right now this is the 10 address from ganache but when we will connect to the ethereum network it will be the user address
   // to send the transaction
   const receipt = await contract.methods.setData(21).send({
